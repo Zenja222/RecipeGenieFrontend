@@ -35,7 +35,7 @@ function AllRecipesView() {
             {recipes ?
                 (<>{recipes.map(recipe => {
                     return (
-                        <Col key={`product-card-${recipe.id}`} sm={12} md={4}
+                        <Col key={`product-card-${recipe.id}`} sm={12} md={3}
                              className="d-flex justify-content-center">
                             <div className="mt-4">
                                 <RecipeCard handleOnEdit={handleRecipeEdit}
@@ -46,7 +46,6 @@ function AllRecipesView() {
                 })}
                 </>)
                 : (<Spinner animation="border"/>)}
-
         </Row>
     );
 }

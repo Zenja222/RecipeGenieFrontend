@@ -91,7 +91,7 @@ const RecipeAddForm = ({handleRecipeAdd}) => {
                                 <div className="error">{errors.lvl}</div>
                             )}
                         </div>
-                        <Button type="submit" disabled={isSubmitting}>
+                        <Button variant="warning" type="submit" disabled={isSubmitting}>
                             Submit
                         </Button>
                     </Form>

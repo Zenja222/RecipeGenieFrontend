@@ -15,9 +15,8 @@ function RecipeCard({ recipe, handleOnEdit }) {
                     <Card.Title>{recipe.name}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">Ingredients: {recipe.ingredients}</Card.Subtitle>
                     <Card.Subtitle className="mb-2 text-muted">Complexity: {recipe.lvl}</Card.Subtitle>
-                    <div className="d-flex justify-content-between">
-                        <Button variant="primary" onClick={handleOpenModal}>Open Recipe</Button>
-                        <Button onClick={() => handleOnEdit(recipe.id)}>Edit</Button>
+                    <div className="d-flex pt-2 justify-content-center">
+                        <Button variant="warning" onClick={handleOpenModal}>Open Recipe</Button>
                     </div>
                 </Card.Body>
             </Card>

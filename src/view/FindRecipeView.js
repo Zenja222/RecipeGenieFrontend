@@ -28,10 +28,10 @@ function FindRecipeView() {
     };
 
     return (
-        <Container>
+        <div className="text-center>">
             <Form className="my-4">
                 <Form.Group controlId="formLevel">
-                    <Form.Label>Select Cooking Skill Level</Form.Label>
+                    <Form.Label style={{fontSize: "50px"}}>Select Cooking Skill Level</Form.Label>
                     <Form.Control
                         as="select"
                         value={level}
@@ -46,7 +46,7 @@ function FindRecipeView() {
                     </Form.Control>
                 </Form.Group>
 
-                <Button variant="primary" onClick={handleFetchRecipes} disabled={loading} className="mt-2">
+                <Button variant="warning" onClick={handleFetchRecipes} disabled={loading} className="mt-4">
                     {loading ? <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" /> : 'Find Recipes'}
                 </Button>
             </Form>
@@ -58,7 +58,7 @@ function FindRecipeView() {
                     </Col>
                 ))}
             </Row>
-        </Container>
+        </div>
     );
 }
 
